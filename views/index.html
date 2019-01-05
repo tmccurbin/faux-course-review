@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Penn Course Review Lite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">Penn Course Review Lite</a>
+        <!-- Mobile Nav -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <!-- Note this item has an ID of 'reviews' and a base reference which is used to re-calculate the href attribute in indexPage.js -->
+            <a class="nav-item nav-link" id="reviews" data-baseref="/api/all">All Reviews</a>
+            <a class="nav-item nav-link" href="/reviews/new">Add Review</a>
+          </div>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="mr-sm-2" type="text" id="key" placeholder="Enter your key..." aria-label="Test Key">
+            <!-- Note this item has an ID of 'testkey' and a base reference which is used to re-calculate the href attribute in indexPage.js -->
+            <a id="testkey" data-baseref="/testKey">
+              <button class="btn btn-outline-success my-2 my-sm-0">Test Key</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+      <!-- Masthead -->
+      <header class="masthead text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 mx-auto">
+              <h1 class="mb-5">A student-run guide for finding the best classes on campus.</h1>
+            </div>
+          </div>
+          <div class="row col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <div class="col-md-6 col-sm-7">
+              <a class="nav-item nav-link active" href="/keys/newKey"><span class="sr-only">New Key</span>
+                <button class="btn btn-block btn-lg btn-light">New Key</button>
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-7">
+              <a class="nav-item nav-link active" href="/loginAdmin"><span class="sr-only">Log In</span>
+                <button class="btn btn-block btn-lg btn-primary">Sign In</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <!-- Footer -->
+      <footer class="footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+              <p class="text-muted small mb-4 mb-lg-0">&copy; Tyrell McCurbin 2018. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- App-Specific JavaScript -->
+      <script src="/js/indexPage.js"></script>
+    
+  </body>
+
+</html>

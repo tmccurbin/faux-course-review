@@ -1,0 +1,18 @@
+{
+  "reviews": {
+    "cis197": {
+      "_id": "54c1321303069f7ee53adcfb",
+      "className": "JavaScript",
+      "semester": "2016 Spring",
+      "rating": 5,
+      "text": "This class is awesome!"
+    },
+    "bskt101": {
+      "_id": "6a4928afd0f20971d82105e4",
+      "className": "Underwater Basket Weaving",
+      "semester": "2015 Fall",
+      "rating": 1,
+      "text": "This course did not prepare me for the workforce."
+    }
+  }
+}

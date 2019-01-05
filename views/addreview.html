@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Add a Review</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles -->
+    <link href="/css/landing-page.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">Penn Course Review Lite</a>
+        <!-- Mobile Nav -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <!-- Note this item has an ID of 'reviews' and a base reference which is used to re-calculate the href attribute in indexPage.js -->
+            <a class="nav-item nav-link" id="reviews" data-baseref="/api/all">All Reviews</a>
+            <a class="nav-item nav-link active" href="/reviews/new">Add Review</a>
+          </div>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="mr-sm-2" type="text" id="key" placeholder="Enter your key..." aria-label="Test Key">
+            <!-- Note this item has an ID of 'testkey' and a base reference which is used to re-calculate the href attribute in indexPage.js -->
+            <a id="testkey" data-baseref="/testKey">
+              <button class="btn btn-outline-success my-2 my-sm-0">Test Key</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="general-background">
+
+      <h1 class="page-header">Add a Review</h1>
+
+      <div class="container">
+        <form method="post" class="review-form">
+            <p>Class Name<br>
+            <input type="text" name="className" placeholder="CIS 197"></p>
+            <p>Semester<br>
+            <input type="text" name="semester" placeholder="2016 Spring"></p>
+            <p>Rating<br>
+              <select name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+              </select>
+            </p>
+            <p>Review<br>
+            <textarea name="text" class="col-md-6"></textarea></p>
+            <button type="submit" class="btn btn-light">Submit</button>
+          </form> 
+      </div> <!-- container -->
+    </div> <!-- general-background -->
+  
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- App-Specific JavaScript -->
+    <script src="/js/indexPage.js"></script>
+    
+  </body>
+
+</html>
