@@ -10,8 +10,20 @@ require('../db/seed.js')(function (err) {
 
     app.set('port', process.env.PORT || 3000);
 
+    var os = require('os');
+    var interfaces = os.networkInterfaces();
+    var addresses = [];
+    for (var k in interfaces) {
+        for (var k2 in interfaces[k]) {
+            var address = interfaces[k][k2];
+            if (address.family === 'IPv4' && !address.internal) {
+                addresses.push(address.address);
+            }
+        }
+    }
+
     var server = app.listen(app.get('port'), function () {
-      console.log('Express server listening on port %d', server.address().port);
+      console.log('Express server listening at: ' + addresses + ':' + server.address().port);
     });
   }
 });
