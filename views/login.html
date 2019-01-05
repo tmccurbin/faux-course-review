@@ -1,10 +1,90 @@
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>Admin Login</h1>
-<form method="post">
-  <p>Username<br>
-  <input type="text" name="username"></p>
-  <p>Password<br>
-  <input type="password" name="password"></p>
-  <p><input type="submit"></p>
-</form>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Log in to submit reviews">
+    <meta name="author" content="Tyrell McCurbin">
+
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">Faux Course Review</a>
+        <!-- Mobile Nav -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <!-- Note this item has an ID of 'reviews' and a base reference which is used to re-calculate the href attribute in indexPage.js -->
+            <a class="nav-item nav-link" id="reviews" data-baseref="/api/all">All Reviews</a>
+            <a class="nav-item nav-link" href="/reviews/new">Add Review</a>
+          </div>
+          <div class="form-inline my-2 my-lg-0">
+            <input class="mr-sm-2" type="text" id="key" placeholder="Enter your key first..." aria-label="Test Key">
+            <!-- Note this item has an ID of 'testkey' and a base reference which is used to re-calculate the href attribute in indexPage.js -->
+            <a id="testkey" data-baseref="/testKey">
+              <button class="btn btn-outline-success my-2 my-sm-0">Test Key</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <div class="general-background">
+
+      <h1 class="page-header">Admin Login</h1>
+
+      <div class="container">
+        <form method="post">
+            <p style="color: black">Username (admin)<br>
+            <input type="text" name="username"></p>
+            <p style="color: black">Password (password)<br>
+            <input type="password" name="password"></p>
+            <p><input type="submit"></p>
+          </form>
+      </div> <!-- container -->
+
+    </div> <!-- general-background -->
+  
+      <!-- Footer -->
+      <footer class="footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+              <p class="text-muted small mb-4 mb-lg-0">&copy; Tyrell McCurbin 2018. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- App-Specific JavaScript -->
+      <script src="/js/indexPage.js"></script>
+    
+  </body>
+
+</html>

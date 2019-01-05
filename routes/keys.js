@@ -29,7 +29,9 @@ router.get('/keys/newKey', function (req, res, next) {
     if (err) {
       next(err);
     } else {
-      res.send(newApiKey);
+      res.render('newKey', {
+        key: newApiKey
+      });
     }
   });
 });
