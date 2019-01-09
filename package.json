@@ -1,13 +1,13 @@
 {
-  "name": "hw6",
+  "name": "Faux Course Review",
   "version": "1.0.0",
-  "description": "Penn Course Review API",
+  "description": "Adapted from CIS 197 Penn Course Review HW",
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/run-server",
     "test": "grunt"
   },
-  "author": "",
+  "author": "Tyrell McCurbin",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.1",
