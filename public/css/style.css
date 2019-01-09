@@ -13,3 +13,8 @@
   padding-top: 5vh;
   padding-bottom: 10vh;
 }
+
+#brand-img {
+  height: 35px;
+  display: inline-block;
+}
