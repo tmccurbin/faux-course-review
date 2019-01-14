@@ -1,15 +1,14 @@
 var mongoose = require('mongoose');
-const user = 'adminuser'
-const password = 'r15qdYlQPP3vE1Vx'
+const dotenv = require('dotenv')
+
+// Configure environment variables
+dotenv.config()
+const user = process.env.DB_USER
+const password = process.env.DB_PASSWORD
+const host = process.env.DB_HOST
+
 // Note that the database is named cis197hw6
-mongoose.connect('mongodb://' + user + ':' + password + '@' +
-'cluster0-shard-00-00-j30jb.mongodb.net:27017,' +
-'cluster0-shard-00-01-j30jb.mongodb.net:27017,' +
-'cluster0-shard-00-02-j30jb.mongodb.net:27017/cis197hw6' +
-'?ssl=true' +
-'&replicaSet=Cluster0-shard-0' +
-'&authSource=admin' +
-'&retryWrites=true', function (err) {
+mongoose.connect('mongodb://' + user + ':' + password + '@' + host, function (err) {
   if (err && err.message.includes('ECONNREFUSED')) {
     console.log('Error connecting to mongodb database', err.message);
     process.exit(0);
